@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subneteo</title>
+    <script src="js/logica.js" ></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body background="css/Fondo.png">
+    <div class="div_inicio">
+        <div class="cont_perfil">
+            <h1>Subneteo</h1>
+            <table>
+                <tr>
+                    <td>
+                        <label>Ingresa la ip</label>
+                    </td>
+                    <td>
+                        <input type="input_text" class="input_text" id="ip">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Número de subredes</label>
+                    </td>
+                    <td>
+                        <input type="input_text" class="input_text" id="subred">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" class="boton" value="Calcular" onclick="prueba()" >
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+        <br>
+        <div class="cont_perfil">
+            <table>
+                <tr>
+                    <td>
+                        <label>IP en binario</label>
+                    </td>
+                    <td>
+                        <input type="text" class="input_text" id="ipbin" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Tipo de clase</label>  
+                    </td>
+                    <td>
+                        <input type="text" class="input_text" id="clase" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Máscara de subred adaptada</label>
+                    </td>
+                    <td>
+                        <input type="text" class="input_text" id="maskadap" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Máscara de subred en binario</label>
+                    </td>
+                    <td>
+                        <input type="text" class="input_text" id="maskbin" readonly>
+                    </td>
+                </tr>
+                
+            </table>
+        </div>
+        <br>
+        <div>
+            <table id="tabla1" class="table_admon">           
+            </table>
+        </div>
+    </div>  
+    <br>
+    <br>
+    <br>
+</body>
+</html>
